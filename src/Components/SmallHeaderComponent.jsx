@@ -32,7 +32,7 @@ export default function Example() {
             <div className="flex shrink-0 items-center">
               <img
                 alt="Your Company"
-                src="./img/me.jpg"
+                src="/img/me.jpg"
                 className="h-8 w-auto"
               />
             </div>
