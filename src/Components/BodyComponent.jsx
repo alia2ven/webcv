@@ -27,7 +27,7 @@ function BodyComponent() {
 
   <img
     alt=""
-    src="/avatar.jpg"
+    src="/assets/avatar.jpg"
     className="inline-block size-45 rounded-full ring-2 ring-red shadow-xl/60 transition delay-400 duration-500 ease-in-out transform hover:rotate-45  "
   />
 
