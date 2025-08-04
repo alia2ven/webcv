@@ -1,0 +1,746 @@
+
+    /* ====== ESTILOS BASE Y CONTROLES ====== */
+    .ftx-style-switcher {
+      width: 100%;
+      position: relative;
+    }
+
+    .ftx-controls {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      border-radius: 12px 12px 0 0;
+    }
+
+    .ftx-controls-label {
+      color: white;
+      font-weight: 600;
+      font-size: 0.9rem;
+      letter-spacing: 0.5px;
+    }
+
+    .ftx-style-btn {
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      padding: 0.5rem 1rem;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(10px);
+      font-weight: 500;
+      text-transform: capitalize;
+    }
+
+    .ftx-style-btn:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .ftx-style-btn.ftx-active {
+      background: white;
+      color: #667eea;
+      border-color: white;
+    }
+
+    /* ====== ESTILOS COMUNES ====== */
+    .ftx-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    .ftx-grid-layout {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 3rem 0;
+    }
+
+    .ftx-brand-title {
+      font-size: 4.8rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      letter-spacing: -0.5px;
+    }
+
+    .ftx-brand-description {
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+      opacity: 0.9;
+      text-align: center;
+    }
+
+    .ftx-social-cluster {
+      display: flex;
+      gap: 1rem;
+justify-content: center;
+align-items: center;
+
+    }
+
+    .ftx-social-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .ftx-social-icon {
+      width: 20px;
+      height: 20px;
+      fill: currentColor;
+
+    }
+
+    .ftx-section-title {
+      font-size: 2.1rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      letter-spacing: 0.5px;
+      text-align: center;
+    }
+
+    .ftx-links-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+    }
+
+    .ftx-links-list li {
+      margin-bottom: 0.8rem;
+    }
+
+    .ftx-nav-link {
+      text-decoration: none;
+      transition: all 0.3s ease;
+      opacity: 0.8;
+      font-weight: 400;
+    }
+
+    .ftx-newsletter-text {
+      margin-bottom: 1rem;
+      opacity: 0.9;
+      line-height: 1.5;
+text-align: center;
+    }
+
+    .ftx-newsletter-form {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .ftx-newsletter-input {
+      flex: 1;
+      min-width: 200px;
+      padding: 0.75rem;
+      border-radius: 8px;
+      border: none;
+      font-size: 0.9rem;
+      outline: none;
+display: flex; /* Hacemos que el input y el botón se pongan en línea */
+  width: 100%;
+  max-width: 500px; 
+    }
+
+    .ftx-newsletter-btn {
+   padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  
+         }
+.newsletter-container-btn{
+
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente (opcional) */
+}
+
+
+    .ftx-bottom-bar {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 2rem;
+      margin-top: 2rem;
+
+    }
+
+    .ftx-legal-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .ftx-copyright {
+      margin: 0;
+      opacity: 0.8;
+      font-size: 0.9rem;
+    }
+
+    .ftx-legal-links {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .ftx-legal-link {
+      text-decoration: none;
+      opacity: 0.8;
+      transition: opacity 0.3s ease;
+      font-size: 0.9rem;
+    }
+
+    /* ====== ESTILO NEBULA ====== */
+    .ftx-nebula-base {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .ftx-nebula-base::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: 
+        radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    .ftx-nebula-base .ftx-social-link {
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+      backdrop-filter: blur(10px);
+    }
+
+    .ftx-nebula-base .ftx-social-link:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transform: translateY(-3px);
+    }
+
+    .ftx-nebula-base .ftx-nav-link {
+      color: white;
+    }
+
+    .ftx-nebula-base .ftx-nav-link:hover {
+      color: #a8edea;
+      transform: translateX(5px);
+    }
+
+    .ftx-nebula-base .ftx-newsletter-input {
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+        display: flex;
+        justify-content: center;
+         align-items: center;
+    }
+
+    .ftx-nebula-base .ftx-newsletter-input::placeholder {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .ftx-nebula-base .ftx-newsletter-btn {
+      background: linear-gradient(45deg, #a8edea, #fed6e3);
+      color: #333;
+ display: flex;
+        justify-content: center;
+         align-items: center;
+    }
+
+    .ftx-nebula-base .ftx-newsletter-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .ftx-nebula-base .ftx-legal-link:hover {
+      opacity: 1;
+      color: #a8edea;
+    }
+
+    /* ====== ESTILO AURORA ====== */
+    .ftx-aurora-base {
+      background: linear-gradient(135deg, #0c0c0c 0%, #1a1a2e 50%, #16213e 100%);
+      color: white;
+      position: relative;
+    }
+
+    .ftx-aurora-base::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: 
+        linear-gradient(90deg, transparent 0%, rgba(0, 255, 150, 0.1) 25%, transparent 50%, rgba(255, 0, 150, 0.1) 75%, transparent 100%);
+      animation: aurora-flow 8s ease-in-out infinite;
+      pointer-events: none;
+    }
+
+    @keyframes aurora-flow {
+      0%, 100% { transform: translateX(-100%); }
+      50% { transform: translateX(100%); }
+    }
+
+    .ftx-aurora-base .ftx-social-link {
+      background: linear-gradient(45deg, #00ff96, #ff0096);
+      color: white;
+      box-shadow: 0 4px 15px rgba(0, 255, 150, 0.3);
+    }
+
+    .ftx-aurora-base .ftx-social-link:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 20px rgba(0, 255, 150, 0.5);
+    }
+
+    .ftx-aurora-base .ftx-nav-link {
+      color: #e0e0e0;
+      position: relative;
+    }
+
+    .ftx-aurora-base .ftx-nav-link::before {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(45deg, #00ff96, #ff0096);
+      transition: width 0.3s ease;
+    }
+
+    .ftx-aurora-base .ftx-nav-link:hover::before {
+      width: 100%;
+    }
+
+    .ftx-aurora-base .ftx-nav-link:hover {
+      color: #00ff96;
+    }
+
+    .ftx-aurora-base .ftx-newsletter-input {
+      background: rgba(255, 255, 255, 0.05);
+      color: white;
+      border: 1px solid rgba(0, 255, 150, 0.3);
+      backdrop-filter: blur(10px);
+    }
+
+    .ftx-aurora-base .ftx-newsletter-input:focus {
+      border-color: #00ff96;
+      box-shadow: 0 0 10px rgba(0, 255, 150, 0.3);
+    }
+
+    .ftx-aurora-base .ftx-newsletter-btn {
+      background: linear-gradient(45deg, #00ff96, #ff0096);
+      color: white;
+      box-shadow: 0 4px 15px rgba(0, 255, 150, 0.3);
+       display: flex;
+        justify-content: center;
+         align-items: center;
+    }
+
+    .ftx-aurora-base .ftx-newsletter-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0, 255, 150, 0.5);
+    }
+
+    /* ====== ESTILO QUANTUM ====== */
+    .ftx-quantum-base {
+      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+      color: white;
+      position: relative;
+    }
+
+    .ftx-quantum-base::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: 
+        radial-gradient(2px 2px at 20px 30px, rgba(255, 255, 255, 0.3), transparent),
+        radial-gradient(2px 2px at 40px 70px, rgba(255, 255, 255, 0.2), transparent),
+        radial-gradient(1px 1px at 90px 40px, rgba(255, 255, 255, 0.4), transparent);
+      background-size: 100px 100px, 120px 120px, 80px 80px;
+      animation: quantum-dots 10s linear infinite;
+      pointer-events: none;
+    }
+
+    @keyframes quantum-dots {
+      0% { transform: translate(0, 0); }
+      100% { transform: translate(-100px, -100px); }
+    }
+
+    .ftx-quantum-base .ftx-social-link {
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+    }
+
+    .ftx-quantum-base .ftx-social-link:hover {
+      background: rgba(255, 255, 255, 0.2);
+      border-color: #4facfe;
+      box-shadow: 0 0 20px rgba(79, 172, 254, 0.3);
+    }
+
+    .ftx-quantum-base .ftx-nav-link {
+      color: #e0e0e0;
+      position: relative;
+      display: inline-block;
+    }
+
+    .ftx-quantum-base .ftx-nav-link::after {
+      content: '';
+      position: absolute;
+      right: -10px;
+      top: 50%;
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 5px solid #4facfe;
+      transform: translateY(-50%) rotate(45deg);
+      opacity: 0;
+      transition: all 0.3s ease;
+    }
+
+    .ftx-quantum-base .ftx-nav-link:hover::after {
+      opacity: 1;
+      right: -15px;
+    }
+
+    .ftx-quantum-base .ftx-nav-link:hover {
+      color: #4facfe;
+      padding-left: 5px;
+    }
+
+    .ftx-quantum-base .ftx-newsletter-input {
+      background: rgba(255, 255, 255, 0.05);
+      color: white;
+      border: 1px solid rgba(79, 172, 254, 0.3);
+      backdrop-filter: blur(10px);
+    }
+
+    .ftx-quantum-base .ftx-newsletter-btn {
+      background: linear-gradient(45deg, #4facfe, #00f2fe);
+      color: white;
+      border: none;
+      box-shadow: 0 4px 15px rgba(79, 172, 254, 0.3);
+    }
+
+    .ftx-quantum-base .ftx-newsletter-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(79, 172, 254, 0.5);
+    }
+
+    /* ====== ESTILO CRYSTAL ====== */
+    .ftx-crystal-base {
+      background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+      color: white;
+      position: relative;
+    }
+
+    .ftx-crystal-base::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: 
+        linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.1) 50%, transparent 70%),
+        linear-gradient(-45deg, transparent 30%, rgba(255, 255, 255, 0.05) 50%, transparent 70%);
+      background-size: 40px 40px;
+      animation: crystal-shine 6s ease-in-out infinite;
+      pointer-events: none;
+    }
+
+    @keyframes crystal-shine {
+      0%, 100% { transform: translateX(-20px) translateY(-20px); }
+      50% { transform: translateX(20px) translateY(20px); }
+    }
+
+    .ftx-crystal-base .ftx-social-link {
+      background: rgba(255, 255, 255, 0.2);
+      color: white;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .ftx-crystal-base .ftx-social-link:hover {
+      background: rgba(255, 255, 255, 0.3);
+      transform: rotate(5deg) scale(1.05);
+      box-shadow: 0 5px 25px rgba(255, 255, 255, 0.2);
+    }
+
+    .ftx-crystal-base .ftx-nav-link {
+      color: white;
+      position: relative;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .ftx-crystal-base .ftx-nav-link::before {
+      content: '◆';
+      position: absolute;
+      left: -15px;
+      opacity: 0;
+      transition: all 0.3s ease;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .ftx-crystal-base .ftx-nav-link:hover::before {
+      opacity: 1;
+      left: -20px;
+    }
+
+    .ftx-crystal-base .ftx-nav-link:hover {
+      color: #fff;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      transform: translateX(5px);
+    }
+
+    .ftx-crystal-base .ftx-newsletter-input {
+      background: rgba(255, 255, 255, 0.2);
+      color: white;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(10px);
+    }
+
+    .ftx-crystal-base .ftx-newsletter-input::placeholder {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .ftx-crystal-base .ftx-newsletter-btn {
+      background: rgba(255, 255, 255, 0.3);
+      color: white;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      backdrop-filter: blur(10px);
+    }
+
+    .ftx-crystal-base .ftx-newsletter-btn:hover {
+      background: rgba(255, 255, 255, 0.4);
+      transform: translateY(-2px);
+      box-shadow: 0 5px 20px rgba(255, 255, 255, 0.2);
+    }
+
+    /* ====== ESTILO COSMIC ====== */
+    .ftx-cosmic-base {
+      background: linear-gradient(135deg, #0c0c0c 0%, #1a1a2e 25%, #16213e 50%, #0f3460 75%, #533483 100%);
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .ftx-cosmic-base::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: 
+        radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(138, 43, 226, 0.2) 0%, transparent 50%),
+        radial-gradient(circle at 40% 40%, rgba(255, 20, 147, 0.1) 0%, transparent 50%);
+      animation: cosmic-nebula 12s ease-in-out infinite;
+      pointer-events: none;
+    }
+
+    @keyframes cosmic-nebula {
+      0%, 100% { 
+        transform: scale(1) rotate(0deg); 
+        opacity: 0.8;
+      }
+      50% { 
+        transform: scale(1.1) rotate(180deg); 
+        opacity: 1;
+      }
+    }
+
+    .ftx-cosmic-base .ftx-social-link {
+      background: linear-gradient(45deg, #ff006e, #8338ec, #3a86ff);
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .ftx-cosmic-base .ftx-social-link::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+      transition: left 0.5s ease;
+    }
+
+    .ftx-cosmic-base .ftx-social-link:hover::before {
+      left: 100%;
+    }
+
+    .ftx-cosmic-base .ftx-social-link:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 30px rgba(255, 0, 110, 0.5);
+    }
+
+    .ftx-cosmic-base .ftx-nav-link {
+      color: #e0e0e0;
+      position: relative;
+      display: inline-block;
+    }
+
+    .ftx-cosmic-base .ftx-nav-link::before {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(45deg, #ff006e, #8338ec, #3a86ff);
+      transition: all 0.3s ease;
+      transform: translateX(-50%);
+    }
+
+    .ftx-cosmic-base .ftx-nav-link:hover::before {
+      width: 100%;
+    }
+
+    .ftx-cosmic-base .ftx-nav-link:hover {
+      color: #ff006e;
+      text-shadow: 0 0 10px rgba(255, 0, 110, 0.5);
+    }
+
+    .ftx-cosmic-base .ftx-newsletter-input {
+      background: rgba(255, 255, 255, 0.05);
+      color: white;
+      border: 1px solid rgba(255, 0, 110, 0.3);
+      backdrop-filter: blur(15px);
+    }
+
+    .ftx-cosmic-base .ftx-newsletter-input:focus {
+      border-color: #ff006e;
+      box-shadow: 0 0 20px rgba(255, 0, 110, 0.3);
+    }
+
+    .ftx-cosmic-base .ftx-newsletter-btn {
+      background: linear-gradient(45deg, #ff006e, #8338ec, #3a86ff);
+      color: white;
+      border: none;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .ftx-cosmic-base .ftx-newsletter-btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+      transition: left 0.5s ease;
+    }
+
+    .ftx-cosmic-base .ftx-newsletter-btn:hover::before {
+      left: 100%;
+    }
+
+    .ftx-cosmic-base .ftx-newsletter-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(255, 0, 110, 0.4);
+    }
+
+    .ftx-cosmic-base .ftx-legal-link:hover {
+      color: #ff006e;
+      text-shadow: 0 0 10px rgba(255, 0, 110, 0.5);
+    }
+
+    /* ====== RESPONSIVE DESIGN ====== */
+    @media (max-width: 768px) {
+      .ftx-grid-layout {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 2rem 0;
+      }
+      
+      .ftx-controls {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      
+      .ftx-newsletter-form {
+        flex-direction: column;
+      }
+      
+      .ftx-newsletter-input {
+        min-width: 100%;
+
+      }
+      
+      .ftx-legal-info {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .ftx-legal-links {
+        justify-content: center;
+      }
+      
+      .ftx-social-cluster {
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .ftx-container {
+        padding: 0 0.5rem;
+      }
+      
+      .ftx-brand-title {
+        font-size: 4.5rem;
+
+      }
+      
+      .ftx-section-title {
+        font-size: 1rem;
+      }
+      
+      .ftx-style-btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+      }
+      
+      .ftx-social-link {
+        width: 40px;
+        height: 40px;
+      }
+      
+      .ftx-social-icon {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  
