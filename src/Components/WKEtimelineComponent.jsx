@@ -79,6 +79,12 @@ const WorkExperience = () => {
   const currentExp = experiences[selectedJob];
 
   return (
+<<<<<<< HEAD
+=======
+
+    <section id="ExperienciaPage">
+
+>>>>>>> 75db5dc (arreglo)
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-grey to-slate-900 py-16 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
@@ -89,7 +95,15 @@ const WorkExperience = () => {
             Experiencia <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">Profesional</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+<<<<<<< HEAD
             Mi trayectoria profesional en el desarrollo de software y tecnología
+=======
+
+            Mi trayectoria profesional en el desarrollo de software y tecnología
+
+            Mi trayectoria profesional en el desarrollo IT
+
+>>>>>>> 75db5dc (arreglo)
           </p>
         </div>
 
@@ -239,6 +253,12 @@ const WorkExperience = () => {
         </div>
       </div>
     </div>
+<<<<<<< HEAD
+=======
+
+    </section>
+
+>>>>>>> 75db5dc (arreglo)
   );
 };
 

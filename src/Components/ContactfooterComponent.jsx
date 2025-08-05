@@ -11,7 +11,14 @@ export default function ContactFooter() {
       id: 'email',
       icon: Mail,
       title: 'Email',
+<<<<<<< HEAD
       value: 'alex@example.com',
+=======
+
+     
+      value: 'alia2ven@gmail.com',
+
+>>>>>>> 75db5dc (arreglo)
       href: 'mailto:alex@example.com',
       color: 'text-cyan-400',
       hoverColor: 'hover:bg-cyan-500/10 hover:border-cyan-400/30',
@@ -41,7 +48,14 @@ export default function ContactFooter() {
       id: 'phone',
       icon: Phone,
       title: 'Telefono',
+<<<<<<< HEAD
       value: '+1 (555) 123-4567',
+=======
+
+
+      value: '+34 (034) 123-4567',
+
+>>>>>>> 75db5dc (arreglo)
       href: 'tel:+15551234567',
       color: 'text-green-400',
       hoverColor: 'hover:bg-green-500/10 hover:border-green-400/30',
@@ -69,6 +83,13 @@ export default function ContactFooter() {
   }, []);
 
   return (
+<<<<<<< HEAD
+=======
+
+
+    <section id="ContactoPage">
+
+>>>>>>> 75db5dc (arreglo)
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-gray-500 to-slate-950 relative overflow-hidden">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -150,8 +171,17 @@ export default function ContactFooter() {
                   Tienes un proyecto en mente?
                 </h3>
                 <p className="text-slate-300 mb-8 text-lg max-w-2xl mx-auto">
+<<<<<<< HEAD
                   Whether it's a web application, mobile app, or just a creative idea you want to explore, 
                   I'm here to help make it happen.
+=======
+
+                  Whether it's a web application, mobile app, or just a creative idea you want to explore, 
+                  I'm here to help make it happen.
+
+               Ya sea una aplicación web, una aplicación móvil o simplemente una idea creativa que quieras explorar, estoy aquí para ayudarte a hacerla realidad.
+
+>>>>>>> 75db5dc (arreglo)
                 </p>
                 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -253,5 +283,11 @@ export default function ContactFooter() {
         </div>
       </footer>
     </div>
+<<<<<<< HEAD
+=======
+
+    </section>
+
+>>>>>>> 75db5dc (arreglo)
   );
 }

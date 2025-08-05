@@ -4,6 +4,7 @@ import avatar from '/src/assets/avatar.jpg';
 import me from '/src/assets/me.jpg';
 
 const navigation = [
+<<<<<<< HEAD
   { name: 'Ingenieria', href: '#', current: true },
   { name: 'Bienvenida', href: '#', current: false },
   { name: 'Educacion', href: '#', current: false },
@@ -12,6 +13,21 @@ const navigation = [
   { name: 'Portafolio', href: '#', current: false },
 ]
 
+=======
+
+  { name: 'Inicio', href: '#', current: true },
+
+ { name: "Bienvenida", href: '#WelcomePage', current: true },
+  { name: 'Formación', href: '#FormacionPage', current: false },
+  { name: 'Experiencia', href: '#ExperienciaPage', current: false },
+  { name: 'Habilidades Tecnicas', href: '#SkillsPage', current: false },
+  { name: 'Portafolio', href: '#PortafolioPage', current: false },
+  { name: 'Contacto', href: '#ContactoPage', current: false },
+]
+
+
+
+>>>>>>> 75db5dc (arreglo)
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }

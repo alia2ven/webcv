@@ -7,15 +7,25 @@ export default function TechTimeline() {
 
   const timelineData = [
     {
+<<<<<<< HEAD
       year: '2020',
       title: 'Inicio en IT',
+=======
+      year: '1993',
+      title: 'Ingenieria Tecnica Informatica',
+>>>>>>> 75db5dc (arreglo)
       description: 'Primeros pasos en programación y redes',
       icon: GraduationCap,
       color: 'from-blue-500 to-cyan-500'
     },
     {
+<<<<<<< HEAD
       year: '2021',
       title: 'Full Stack Developer',
+=======
+      year: '2015',
+      title: 'Medium Stack Developer',
+>>>>>>> 75db5dc (arreglo)
       description: 'Dominio de frontend y backend',
       icon: Code,
       color: 'from-purple-500 to-pink-500'
@@ -28,16 +38,26 @@ export default function TechTimeline() {
       color: 'from-green-500 to-emerald-500'
     },
     {
+<<<<<<< HEAD
       year: '2023',
       title: 'DevOps & Cloud',
       description: 'Automatización y cloud computing',
+=======
+     title: 'Main & Asistentes Virtuales ',
+      description: 'Automatización e IA ',
+>>>>>>> 75db5dc (arreglo)
       icon: Cloud,
       color: 'from-orange-500 to-red-500'
     },
     {
+<<<<<<< HEAD
       year: '2024',
       title: 'Especialista Senior',
       description: 'Liderando proyectos complejos',
+=======
+      title: 'Experiencia + 30',
+      description: 'Conocimientos',
+>>>>>>> 75db5dc (arreglo)
       icon: Trophy,
       color: 'from-yellow-500 to-amber-500'
     }
@@ -59,6 +79,11 @@ export default function TechTimeline() {
   }, []);
 
   return (
+<<<<<<< HEAD
+=======
+   <section id="FormacionPage">
+
+>>>>>>> 75db5dc (arreglo)
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-grey to-slate-900 relative overflow-hidden space-y-2">
       {/* Animated Background */}
       <div className="absolute inset-0 opacity-30">
@@ -84,7 +109,11 @@ export default function TechTimeline() {
       <div className="relative z-10 container mx-auto px-6 py-12">
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent mb-4">
+<<<<<<< HEAD
             Mi Journey IT
+=======
+              Mi Formación IT
+>>>>>>> 75db5dc (arreglo)
           </h1>
           <p className="text-xl text-gray-300">
             Evolución de <span className="text-blue-400">código</span> a <span className="text-purple-400">infraestructura</span>
@@ -193,5 +222,9 @@ export default function TechTimeline() {
         }
       `}</style>
     </div>
+<<<<<<< HEAD
+=======
+    </section>
+>>>>>>> 75db5dc (arreglo)
   );
 }

@@ -18,6 +18,13 @@ export default function TechProfile() {
   ];
 
   return (
+<<<<<<< HEAD
+=======
+
+
+    <section id="WelcomePage">
+
+>>>>>>> 75db5dc (arreglo)
     <div className="min-h-4 bg-gradient-to-br from-slate-900 via-grey to-slate-900 relative overflow-hidden">
       {/* Artistic Background Elements */}
       <div className="absolute inset-0 opacity-30">
@@ -164,5 +171,11 @@ export default function TechProfile() {
         }
       `}</style>
     </div>
+<<<<<<< HEAD
+=======
+
+    </section>
+
+>>>>>>> 75db5dc (arreglo)
   );
 }
