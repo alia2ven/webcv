@@ -77,13 +77,13 @@ export default function ModernPortfolio() {
     },
     {
       id: 5,
-      title: 'Crypto Trading Bot',
-      description: 'Automated cryptocurrency trading system with advanced algorithms, risk management, and portfolio optimization.',
-      longDescription: 'Sophisticated trading bot utilizing machine learning algorithms for market analysis. Features include automated portfolio rebalancing, risk assessment, and real-time market monitoring.',
+      title: 'Curriculum Web',
+      description: 'Todo tu curriculum de manera amigable, elegante y practica',
+      longDescription: '..',
       image: '₿',
       category: 'ai',
-      tech: ['Python', 'TensorFlow', 'REST APIs', 'Docker'],
-      demo: '#',
+      tech: ['JavaScript', 'React', 'REST APIs', 'GitHub', 'CloudFlare'],
+      demo: 'https://acv-73y.pages.dev/',
       code: '#',
       gradient: 'from-yellow-500 via-orange-500 to-red-500',
       bgGradient: 'from-yellow-500/20 to-orange-500/20',
@@ -154,7 +154,7 @@ export default function ModernPortfolio() {
           </h1>
           <div className="w-32 h-1 bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 mx-auto rounded-full mb-6"></div>
           <p className="text-xl text-slate-300 max-w-2xl mx-auto">
-            A showcase of innovative projects blending creativity with cutting-edge technology
+            Una muestra de proyectos innovadores que combinan creatividad con tecnología de vanguardia.
           </p>
         </div>
 

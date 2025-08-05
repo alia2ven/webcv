@@ -9,10 +9,10 @@ export default function TechnicalSkillsBars() {
     { name: 'JavaScript', level: 90, color: 'from-yellow-400 to-orange-400', icon: '🟨' },
     { name: 'TypeScript', level: 85, color: 'from-blue-600 to-blue-400', icon: '🔷' },
     { name: 'Node.js', level: 80, color: 'from-green-500 to-emerald-400', icon: '🟢' },
-    { name: 'Python', level: 88, color: 'from-indigo-500 to-purple-400', icon: '🐍' },
+    { name: 'PHP', level: 88, color: 'from-indigo-500 to-purple-400', icon: '🐍' },
     { name: 'CSS/Tailwind', level: 92, color: 'from-pink-500 to-rose-400', icon: '🎨' },
     { name: 'MongoDB', level: 78, color: 'from-green-600 to-green-400', icon: '🍃' },
-    { name: 'GraphQL', level: 75, color: 'from-purple-500 to-pink-400', icon: '🔗' }
+    { name: 'MySQL', level: 75, color: 'from-purple-500 to-pink-400', icon: '🔗' }
   ];
 
   useEffect(() => {
@@ -31,11 +31,11 @@ export default function TechnicalSkillsBars() {
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-5xl font-bold bg-gradient-to-r from-cyan-400 via-white to-pink-400 bg-clip-text text-transparent mb-4">
-            Technical Skills
+            Hábilidades Técnicas
           </h1>
           <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-purple-400 mx-auto rounded-full"></div>
           <p className="text-slate-300 mt-6 text-lg">
-            Expertise across modern technologies and frameworks
+            Experiencia en tecnologías y FrameWors modernos
           </p>
         </div>
 

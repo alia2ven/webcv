@@ -95,7 +95,7 @@ export default function TechTimeline() {
 
           </h1>
           <p className="text-xl text-gray-300">
-            Evolución de <span className="text-blue-400">código</span> a <span className="text-purple-400">infraestructura</span>
+            Evolución desde que NO existîa<span className="text-blue-400">Internet</span> a <span className="text-purple-400">La IA</span>
           </p>
         </div>
 

@@ -9,12 +9,12 @@ export default function TechProfile() {
   }, []);
 
   const skills = [
-    { icon: Code, label: "Full Stack Development", color: "text-blue-400" },
+    { icon: Code, label: "Web Stack Development", color: "text-blue-400" },
     { icon: Cpu, label: "Arquitectura de Sistemas", color: "text-purple-400" },
     { icon: HardDrive, label: "Infraestructura IT", color: "text-green-400" },
     { icon: Wifi, label: "Redes & Conectividad", color: "text-pink-400" },
     { icon: Zap, label: "Automatización", color: "text-yellow-400" },
-    { icon: Monitor, label: "DevOps & Cloud", color: "text-cyan-400" }
+    { icon: Monitor, label: "Asistentes Virtuales", color: "text-cyan-400" }
   ];
 
   return (
@@ -81,7 +81,7 @@ export default function TechProfile() {
                   <p className="text-gray-300 text-lg leading-relaxed">
                     Mi enfoque híbrido me permite entender tanto los aspectos técnicos del desarrollo 
                     como las necesidades físicas de la infraestructura, creando puentes entre el 
-                    mundo digital y físico.
+                    mundo digital y físico, asi como tambien en la parte empresarial y de negocios.
                   </p>
                 </div>
                 
@@ -95,15 +95,15 @@ export default function TechProfile() {
                     <div className="space-y-3">
                       <div className="flex justify-between items-center">
                         <span className="text-gray-300">Frontend</span>
-                        <span className="text-blue-400 font-mono">React, Vue, Angular</span>
+                        <span className="text-blue-400 font-mono">React, Vue, Next</span>
                       </div>
                       <div className="flex justify-between items-center">
                         <span className="text-gray-300">Backend</span>
-                        <span className="text-purple-400 font-mono">Node.js, Python, .NET</span>
+                        <span className="text-purple-400 font-mono">Node.js, JavaScript, PHP</span>
                       </div>
                       <div className="flex justify-between items-center">
                         <span className="text-gray-300">Infraestructura</span>
-                        <span className="text-green-400 font-mono">AWS, Docker, K8s</span>
+                        <span className="text-green-400 font-mono">Lan, hardware, Github</span>
                       </div>
                     </div>
                   </div>

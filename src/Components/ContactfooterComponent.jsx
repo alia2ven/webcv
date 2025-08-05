@@ -31,7 +31,7 @@ export default function ContactFooter() {
       id: 'github',
       icon: Github,
       title: 'GitHub',
-      value: '@alexdev',
+      value: '@alia2ven',
       href: 'https://github.com',
       color: 'text-purple-400',
       hoverColor: 'hover:bg-purple-500/10 hover:border-purple-400/30',
@@ -97,8 +97,8 @@ export default function ContactFooter() {
             </h2>
             <div className="w-32 h-1 bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 mx-auto rounded-full mb-8"></div>
             <p className="text-xl md:text-2xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
-              Ready to bring your ideas to life? Let's create something amazing together. 
-              <span className="block mt-2 text-lg text-slate-400">I'm always excited to work on new projects and collaborations.</span>
+              ¿Listo para hacer realidad tus ideas? Creemos algo increíble juntos.
+              <span className="block mt-2 text-lg text-slate-400">Siempre estoy emocionado de trabajar en nuevos proyectos y colaboraciones.</span>
             </p>
           </div>
 
@@ -187,7 +187,7 @@ export default function ContactFooter() {
                 Javier Developer
               </div>
               <p className="text-slate-400 max-w-sm">
-                Creating digital experiences that inspire and connect people through innovative technology.
+               Creando experiencias digitales que inspiran y conectan a las personas a través de tecnología innovadora.
               </p>
             </div>
 
@@ -195,7 +195,7 @@ export default function ContactFooter() {
             <div className="text-center">
               <h4 className="text-white font-semibold mb-4">Quick Links</h4>
               <div className="space-y-2">
-                {['Home', 'About', 'Projects', 'Contact'].map((link) => (
+                {['Inicio', 'About', 'Projects', 'Contacto'].map((link) => (
                   <a
                     key={link}
                     href={`#${link.toLowerCase()}`}
@@ -238,9 +238,9 @@ export default function ContactFooter() {
             </div>
             
             <div className="flex items-center space-x-4 text-sm text-slate-400">
-              <a href="#" className="hover:text-cyan-400 transition-colors duration-300">Privacy Policy</a>
+              <a href="#" className="hover:text-cyan-400 transition-colors duration-300">Politica de Privacidad</a>
               <span>•</span>
-              <a href="#" className="hover:text-cyan-400 transition-colors duration-300">Terms of Service</a>
+              <a href="#" className="hover:text-cyan-400 transition-colors duration-300">Terminos del Servicio</a>
             </div>
           </div>
 
