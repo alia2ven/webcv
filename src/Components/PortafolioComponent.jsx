@@ -138,13 +138,11 @@ export default function ModernPortfolio() {
   };
 
   return (
-<<<<<<< HEAD
-=======
+
 
 
     <section id="PortafolioPage">
 
->>>>>>> 75db5dc (arreglo)
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-gray-500 to-slate-950 p-8 ">
 
 
@@ -304,11 +302,10 @@ export default function ModernPortfolio() {
         </div>
       </div>
     </div>
-<<<<<<< HEAD
-=======
+
 
     </section>
 
->>>>>>> 75db5dc (arreglo)
+
   );
 }

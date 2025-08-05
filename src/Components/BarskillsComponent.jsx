@@ -21,12 +21,11 @@ export default function TechnicalSkillsBars() {
   }, []);
 
   return (
-<<<<<<< HEAD
-=======
+
 
     <section id="SkillsPage">
 
->>>>>>> 75db5dc (arreglo)
+
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-white-400 to-slate-900 p-8">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
@@ -138,11 +137,10 @@ export default function TechnicalSkillsBars() {
         </div>
       </div>
     </div>
-<<<<<<< HEAD
-=======
+
 
     </section>
 
->>>>>>> 75db5dc (arreglo)
+
   );
 }
