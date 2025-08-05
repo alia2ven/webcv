@@ -1,8 +1,7 @@
 
 import React from 'react'
 
-import avatar from '/src/assets/avatar.jpg';
-
+import avatar from "/assets/avatar.jpg"
 
 
 function BodyComponent() {
