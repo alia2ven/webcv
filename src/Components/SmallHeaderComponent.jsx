@@ -4,16 +4,6 @@ import avatar from '/src/assets/avatar.jpg';
 import me from '/src/assets/me.jpg';
 
 const navigation = [
-<<<<<<< HEAD
-  { name: 'Ingenieria', href: '#', current: true },
-  { name: 'Bienvenida', href: '#', current: false },
-  { name: 'Educacion', href: '#', current: false },
-  { name: 'Experiencia', href: '#', current: false },
-  { name: 'Habilidades Tecnicas', href: '#', current: false },
-  { name: 'Portafolio', href: '#', current: false },
-]
-
-=======
 
   { name: 'Inicio', href: '#', current: true },
 
@@ -27,7 +17,7 @@ const navigation = [
 
 
 
->>>>>>> 75db5dc (arreglo)
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
