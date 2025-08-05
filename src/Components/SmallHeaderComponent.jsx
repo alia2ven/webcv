@@ -4,7 +4,6 @@ import avatar from '/assets/avatar.jpg';
 import me from '/src/assets/me.jpg';
 
 const navigation = [
-
   { name: 'Inicio', href: '#', current: true },
   { name: "Bienvenida", href: '#WelcomePage', current: true },
   { name: 'Formación', href: '#FormacionPage', current: false },
@@ -14,17 +13,14 @@ const navigation = [
   { name: 'Contacto', href: '#ContactoPage', current: false },
 ]
 
-
-
-
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
 export default function Example() {
   return (
-    <Disclosure as="nav" className="bg-gray-800">
-      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8  ">
+    <Disclosure as="nav" className="bg-gray-800 fixed top-0 left-0 right-0 z-50">
+      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* Mobile menu button*/}
@@ -118,7 +114,7 @@ export default function Example() {
         </div>
       </div>
 
-      <DisclosurePanel className="sm:hidden">
+      <DisclosurePanel className="sm:hidden fixed top-16 left-0 right-0 bg-gray-800 z-40">
         <div className="space-y-1 px-2 pt-2 pb-3">
           {navigation.map((item) => (
             <DisclosureButton
@@ -137,9 +133,5 @@ export default function Example() {
         </div>
       </DisclosurePanel>
     </Disclosure>
-
-   
-
-    
   )
 }
