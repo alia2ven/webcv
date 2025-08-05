@@ -6,7 +6,7 @@ import me from '/src/assets/me.jpg';
 const navigation = [
 
   { name: 'Inicio', href: '#', current: true },
- { name: "Bienvenida", href: '#WelcomePage', current: true },
+  { name: "Bienvenida", href: '#WelcomePage', current: true },
   { name: 'Formación', href: '#FormacionPage', current: false },
   { name: 'Experiencia', href: '#ExperienciaPage', current: false },
   { name: 'Habilidades Tecnicas', href: '#SkillsPage', current: false },
