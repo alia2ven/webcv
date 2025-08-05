@@ -14,7 +14,7 @@ import ContactfooterComponent from '../Components/ContactfooterComponent'
 function Home() {
   return (
     <div>
-      {*/<SmallHeaderComponent />*/} 
+      <SmallHeaderComponent /> 
     {/*<AvatarComponent />  */}
       <BodyComponent />
       {/*<HeaderComponent /> */}
