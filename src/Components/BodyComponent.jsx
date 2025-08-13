@@ -43,8 +43,7 @@ function BodyComponent() {
               Javier Viloria Olmos
             </h1>
             <p className="mt-8   text-pretty text-white ">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-              fugiat veniam occaecat.
+              Mas de 30+ de una vasta experiencia práctica y un profundo entendimiento de diversos aspectos de la informática, incluyendo áreas como software, hardware, redes y personas.
             </p>
             
             <div className="mt-10 flex items-center justify-center gap-x-6">
@@ -52,10 +51,10 @@ function BodyComponent() {
                 href="#"
                 className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
-                Get started
+                Ir a Contacto
               </a>
               <a href="#" className="text-sm/6 font-semibold text-gray-900">
-                Learn more <span aria-hidden="true">→</span>
+                Ir a Portafolio <span aria-hidden="true">→</span>
               </a>
             </div>
             </div>

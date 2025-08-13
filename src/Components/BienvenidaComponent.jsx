@@ -82,6 +82,7 @@ export default function TechProfile() {
                     Mi enfoque híbrido me permite entender tanto los aspectos técnicos del desarrollo 
                     como las necesidades físicas de la infraestructura, creando puentes entre el 
                     mundo digital y físico, asi como tambien en la parte empresarial y de negocios.
+                    Para garantizar la máxima flexibilidad, rendimiento y escalabilidad, basaremos nuestros desarrollos en los principios de la arquitectura MACH (Microservicios, API-First, Cloud-Native, Headless), además de un enfoque "Mobile-First". 
                   </p>
                 </div>
                 

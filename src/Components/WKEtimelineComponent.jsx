@@ -13,9 +13,9 @@ const WorkExperience = () => {
     {
       id: 1,
       company: "TechCorp Solutions",
-      position: "Senior Frontend Developer",
-      duration: "2022 - Presente",
-      location: "Madrid, España",
+      position: "Frontend Developer",
+      duration: "2025 - Presente",
+      location: "Remoto",
       type: "Tiempo Completo",
       description: "Desarrollo de aplicaciones web modernas utilizando React, TypeScript y Node.js. Liderazgo de equipo de 4 desarrolladores y implementación de mejores prácticas de desarrollo.",
       achievements: [
@@ -23,19 +23,19 @@ const WorkExperience = () => {
         "Implementé un sistema de design system adoptado por toda la empresa",
         "Lideré la migración de JavaScript a TypeScript en 3 proyectos principales"
       ],
-      technologies: ["React", "TypeScript", "Node.js", "GraphQL", "AWS"],
+      technologies: ["React", "TypeScript", "Node.js", "GraphQL", "GitHub"],
       website: "https://techcorp.com"
     },
     {
       id: 2,
       company: "Digital Innovation Lab",
       position: "Full Stack Developer",
-      duration: "2020 - 2022",
-      location: "Barcelona, España",
+      duration: "2023 - 2023",
+      location: "Remoto",
       type: "Tiempo Completo",
       description: "Desarrollo de soluciones digitales innovadoras para startups y empresas establecidas. Especialización en arquitecturas escalables y experiencias de usuario excepcionales.",
       achievements: [
-        "Desarrollé 15+ aplicaciones web desde cero",
+        "Desarrollé 8+ aplicaciones web desde cero",
         "Reduje los tiempos de carga promedio en un 60%",
         "Implementé sistemas de CI/CD que mejoraron la productividad del equipo"
       ],
@@ -46,7 +46,7 @@ const WorkExperience = () => {
       id: 3,
       company: "StartupHub",
       position: "Frontend Developer",
-      duration: "2019 - 2020",
+      duration: "2022 - 2022",
       location: "Valencia, España",
       type: "Remoto",
       description: "Desarrollo de interfaces de usuario modernas y responsivas. Colaboración estrecha con diseñadores UX/UI para crear experiencias digitales memorables.",
@@ -60,15 +60,15 @@ const WorkExperience = () => {
     },
     {
       id: 4,
-      company: "FreelanceWork",
+      company: "FreelanceWorld",
       position: "Web Developer",
-      duration: "2018 - 2019",
+      duration: "2021 - 2021",
       location: "Remoto",
       type: "Freelance",
       description: "Desarrollo de sitios web y aplicaciones para diversos clientes. Especialización en e-commerce y sitios web corporativos con enfoque en conversión.",
       achievements: [
-        "Completé 25+ proyectos exitosos",
-        "Mantuve una calificación de 5 estrellas en plataformas freelance",
+        "Completé 5+ proyectos exitosos",
+        
         "Aumenté las conversiones de clientes en promedio 35%"
       ],
       technologies: ["WordPress", "PHP", "MySQL", "jQuery", "Bootstrap"],
