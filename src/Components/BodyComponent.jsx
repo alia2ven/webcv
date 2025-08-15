@@ -11,7 +11,7 @@ function BodyComponent() {
   return (
 <>
 {/* Imagen de Fondo para toda la pagina*/}
-<div class="bg-[url('/img/fondo3.png')] bg-cover bg-center bg-no-repeat h-screen">
+<div className="bg-[url('/img/fondo3.png')] bg-cover bg-center bg-no-repeat min-h-screen">
   {/* Contenido de la página */}
 
 
