@@ -9,7 +9,7 @@ export default function ModernPortfolio() {
   const projects = [
     {
       id: 1,
-      title: 'E-Commerce Platform',
+      title: 'Platforma E-Commerce',
       description: 'Solución de comercio electrónico moderna con gestión de inventario en tiempo real, filtros de búsqueda avanzados y una experiencia de pago perfecta.',
       longDescription: 'Una plataforma integral de comercio electrónico desarrollada con tecnologías de vanguardia. Sus funciones incluyen seguimiento de inventario en tiempo real, recomendaciones de productos basadas en IA, un panel de análisis avanzado e integración con múltiples pasarelas de pago.',
       image: '🛒',
@@ -20,19 +20,22 @@ export default function ModernPortfolio() {
       gradient: 'from-purple-500 via-pink-500 to-red-500',
       bgGradient: 'from-purple-500/20 to-pink-500/20',
       date: '2024',
-      status: 'Live',
+      status: 'Beta',
       views: '2.5k',
       stars: 128
     },
     {
       id: 2,
-      title: 'AI Task Manager',
-      description: 'Intelligent productivity app with AI-powered task prioritization, natural language processing, and smart scheduling.',
-      longDescription: 'Revolutionary task management application that leverages artificial intelligence to optimize productivity. Features intelligent task categorization, deadline prediction, and automated workflow suggestions.',
+      title: 'Consultas Medicas Online',
+      description: 'Consultas Medicas a travez de diferenctes medios, como Whatsapp y Meet.',
+      longDescription: 'Aplicación revolucionaria de gestión de tareas para optimizar la productividad. Incluye categorización inteligente de tareas, Agenda plazos y sugerencias automatizadas de flujo de trabajo.',
+      
+
+
       image: '🤖',
       category: 'ai',
-      tech: ['React', 'Python', 'OpenAI', 'PostgreSQL', 'FastAPI'],
-      demo: '#',
+      tech: ['React', 'Vite', 'OpenAI', 'PostgreSQL', 'FastAPI'],
+      demo: 'https://doctorjuliovillegas.pages.dev/',
       code: '#',
       gradient: 'from-blue-500 via-cyan-500 to-teal-500',
       bgGradient: 'from-blue-500/20 to-cyan-500/20',
