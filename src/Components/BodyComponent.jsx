@@ -1,7 +1,7 @@
 
 import React from 'react'
 
-import avatar from "/assets/avatar.jpg"
+import avatar from "/assets/avatar.png"
 
 
 function BodyComponent() {
@@ -27,7 +27,7 @@ function BodyComponent() {
   <img
     alt="avatar"
   
-    className="inline-block size-45 rounded-full ring-2 ring-red shadow-xl/60 transition delay-400 duration-500 ease-in-out transform hover:rotate-45  "
+    className="inline-block size-50 rounded-full ring-2 ring-red shadow-xl/60 transition delay-400 duration-500 ease-in-out transform hover:rotate-45  "
   src={avatar} />
 
 {/* Esto es el pulso que titila */}
