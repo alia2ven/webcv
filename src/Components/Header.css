@@ -1,13 +1,39 @@
-/* Header.css - Glassmorphism Style */
+/* Header.css - Glassmorphism + Auto-hide */
+
+/* Contenedor principal del header */
 .header {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  position: sticky;
+  position: fixed; /* clave para que pueda subir/bajar */
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 1000;
   width: 100%;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px rgba(15, 23, 42, 0.25);
+
+  transform: translateY(0);
+  transition:
+    transform 0.28s ease,
+    background 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+    z-index: 1000;
+}
+
+
+/* Oculto al hacer scroll hacia abajo */
+.header--hidden {
+  transform: translateY(-100%);
+}
+
+/* Cuando hay algo de scroll, aspecto más sólido/compacto */
+
+.header--scrolled {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(18px);
 }
 
 .header-container {
@@ -20,26 +46,32 @@
   height: 80px;
 }
 
+.header--scrolled .header-container {
+  height: 68px;
+}
+
+/* Logo */
 .logo {
   flex-shrink: 0;
 }
 
 .logo-link {
   text-decoration: none;
-  color: #2c3e50;
+  color: #0f172a;
 }
 
 .logo h1 {
   margin: 0;
   font-size: 1.9rem;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #ec4899 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  font-weight: 700;
-  letter-spacing: -0.5px;
+  font-weight: 800;
+  letter-spacing: -0.55px;
 }
 
+/* Nav principal */
 .nav {
   display: flex;
   align-items: center;
@@ -50,34 +82,36 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 1rem;
+  gap: 0.75rem;
 }
 
 .nav-link {
   text-decoration: none;
-  color: #4a5568;
+  color: #4b5563;
   font-weight: 500;
-  padding: 0.75rem 1.5rem;
-  border-radius: 25px;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0.6rem 1.4rem;
+  border-radius: 999px;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(148, 163, 184, 0.5);
+  font-size: 0.95rem;
 }
 
 .nav-link:hover {
-  background: rgba(102, 126, 234, 0.1);
-  border-color: rgba(102, 126, 234, 0.3);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 20px rgba(102, 126, 234, 0.2);
+  background: rgba(99, 102, 241, 0.08);
+  border-color: rgba(99, 102, 241, 0.65);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(79, 70, 229, 0.28);
+  color: #111827;
 }
 
 .nav-link.active {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #ec4899 100%);
+  color: #ffffff;
   border-color: transparent;
-  box-shadow: 0 4px 20px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 8px 22px rgba(79, 70, 229, 0.4);
 }
 
 .nav-link.active::after {
@@ -90,32 +124,33 @@
   flex-direction: column;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(148, 163, 184, 0.7);
   cursor: pointer;
   padding: 8px;
   width: 40px;
   height: 40px;
   position: relative;
-  border-radius: 10px;
-  transition: all 0.3s ease;
+  border-radius: 12px;
+  transition: all 0.25s ease;
 }
 
 .menu-toggle:hover {
-  background: rgba(102, 126, 234, 0.1);
+  background: rgba(99, 102, 241, 0.1);
+  transform: translateY(-1px);
 }
 
 .menu-toggle span {
   display: block;
   height: 2px;
   width: 20px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  margin: 2px 0;
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%);
+  margin: 3px 0;
   transition: 0.3s;
-  border-radius: 2px;
+  border-radius: 999px;
 }
 
 .menu-toggle.active span:nth-child(1) {
-  transform: rotate(-45deg) translate(-4px, 5px);
+  transform: rotate(-45deg) translate(-4px, 6px);
 }
 
 .menu-toggle.active span:nth-child(2) {
@@ -123,7 +158,7 @@
 }
 
 .menu-toggle.active span:nth-child(3) {
-  transform: rotate(45deg) translate(-4px, -5px);
+  transform: rotate(45deg) translate(-4px, -6px);
 }
 
 /* Responsive Design */
@@ -137,9 +172,9 @@
     top: 100%;
     left: 0;
     right: 0;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(20px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(22px);
+    border-bottom: 1px solid rgba(148, 163, 184, 0.4);
     transform: translateY(-100%);
     opacity: 0;
     visibility: hidden;
@@ -155,18 +190,29 @@
   .nav-list {
     flex-direction: column;
     gap: 0.5rem;
-    padding: 1.5rem;
+    padding: 1.5rem 1.25rem 1.75rem;
   }
 
   .nav-link {
     display: block;
-    padding: 1rem 1.5rem;
-    border-radius: 15px;
+    width: 100%;
+    padding: 0.9rem 1.1rem;
+    border-radius: 0.9rem;
     margin: 0;
+    border-width: 1px;
+    text-align: left;
+    background: rgba(15, 23, 42, 0.9);
+    color: #e5e7eb;
   }
 
-  .nav-link.active::after {
-    display: none;
+  .nav-link:hover {
+    background: rgba(99, 102, 241, 0.25);
+    color: #ffffff;
+  }
+
+  .nav-link.active {
+    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #ec4899 100%);
+    color: #ffffff;
   }
 }
 
@@ -174,7 +220,7 @@
   .header-container {
     padding: 0 15px;
   }
-  
+
   .logo h1 {
     font-size: 1.6rem;
   }

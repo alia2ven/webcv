@@ -24,8 +24,8 @@ export default function TechTimeline() {
     },
     {
       year: '2022',
-      title: 'Infraestructura IT',
-      description: 'Servidores, redes y sistemas',
+      title: 'Infraestructura IT ',
+      description: 'Servidores, redes y sistemas ',
       icon: Server,
       color: 'from-green-500 to-emerald-500'
     },
@@ -88,14 +88,19 @@ export default function TechTimeline() {
       {/* Main Content */}
       <div className="relative z-10 container mx-auto px-6 py-12">
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-white mb-4">
 
-        
-              Mi Formación IT
+              Mi Formación 
 
           </h1>
+
+   <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent mb-4">
+
+              IT
+          </h1>
+
           <p className="text-xl text-gray-300">
-            Evolución desde que NO existîa<span className="text-blue-400">Internet</span> a <span className="text-purple-400">La IA</span>
+            Evolución desde que NO existía <span className="text-blue-400">Internet</span> a <span className="text-purple-400">La IA</span>
           </p>
         </div>
 
@@ -126,7 +131,7 @@ export default function TechTimeline() {
                   </div>
 
                   {/* Content Card */}
-                  <div className={`w-5/12 ${isLeft ? 'mr-auto pr-8' : 'ml-auto pl-8'}`}>
+                  <div className={`w-5/9 ${isLeft ? 'mr-auto pr-8' : 'ml-auto pl-8'}`}>
                     <div className={`transition-all duration-700 ${
                       isVisible 
                         ? 'opacity-100 translate-y-0' 

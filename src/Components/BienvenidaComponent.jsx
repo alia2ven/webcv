@@ -96,7 +96,7 @@ export default function TechProfile() {
                     <div className="space-y-3">
                       <div className="flex justify-between items-center">
                         <span className="text-gray-300">Frontend</span>
-                        <span className="text-blue-400 font-mono">React, Vue, Next</span>
+                        <p className="text-blue-400 font-mono">React, Vite, Vue, Next</p>
                       </div>
                       <div className="flex justify-between items-center">
                         <span className="text-gray-300">Backend</span>
@@ -104,8 +104,14 @@ export default function TechProfile() {
                       </div>
                       <div className="flex justify-between items-center">
                         <span className="text-gray-300">Infraestructura</span>
-                        <span className="text-green-400 font-mono">Lan, hardware, Github</span>
+                        <span className="text-green-400 font-mono">Lan, Hardware, Github</span>
                       </div>
+
+ <div className="flex justify-between items-center">
+                        <span className="text-gray-300">Infraestructura</span>
+                        <span className="text-green-400 font-mono">Lan, Hardware, Github</span>
+                      </div>
+                      
                     </div>
                   </div>
                 </div>
